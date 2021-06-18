@@ -43,8 +43,9 @@
 #define EFF_SEL	MWESM_EFFECTFLAG_SELFONLY
 #define EFF_NOS	MWESM_EFFECTFLAG_NOSELF
 #define EFF_TRB	MWESM_EFFECTFLAG_TRIB
+#define EFF_BLD MWESM_EFFECTFLAG_BLDM
    
-esmeffectdata_t l_Effects[MWESM_EFFECT_MAX+1] = {
+esmeffectdata_t l_Effects[MWESM_MAX_EFFECTS] = {
 	{ _T("Water Breathing"),		EFF_DUR | EFF_ALC,	_T("sEffectWaterBreathing") },
 	{ _T("Swift Swim"),			EFF_DEF,		_T("sEffectSwiftSwim") },
 	{ _T("Water Walking"),			EFF_DUR | EFF_ALC,	_T("sEffectWaterWalking") },
@@ -182,7 +183,12 @@ esmeffectdata_t l_Effects[MWESM_EFFECT_MAX+1] = {
 	{ _T("Summon Centurion Sphere"),	EFF_DUR | EFF_ALC | EFF_SEL, _T("sEffectSummonCenturionSphere") },
 	{ _T("Sun Damage"),			EFF_DEF | EFF_SEL,		_T("sEffectSunDamage") },
 	{ _T("Stunted Magicka"),		EFF_DUR | EFF_ALC | EFF_SEL,	_T("sEffectStuntedMagicka") },
-	{ _T("sEffectSummonFabricant"),		EFF_DUR | EFF_TRB | EFF_ALC | EFF_SEL, _T("sEffectStuntedFabricant")  }
+	{ _T("sEffectSummonFabricant"),		EFF_DUR | EFF_TRB | EFF_ALC | EFF_SEL, _T("sEffectSummonFabricant")  },
+	{ _T("Call Wolf"),			EFF_DUR | EFF_BLD | EFF_ALC | EFF_SEL, _T("sEffectSummonCreature01")  },
+	{ _T("Call Bear"),			EFF_DUR | EFF_BLD | EFF_ALC | EFF_SEL, _T("sEffectSummonCreature02")  },
+	{ _T("Summon Bonewolf"),	EFF_DUR | EFF_BLD | EFF_ALC | EFF_SEL, _T("sEffectSummonCreature03")  },
+	{ _T("sEffectSummonCreature04"),	EFF_DUR | EFF_BLD | EFF_ALC | EFF_SEL, _T("sEffectSummonCreature04")  },
+	{ _T("sEffectSummonCreature05"),	EFF_DUR | EFF_BLD | EFF_ALC | EFF_SEL, _T("sEffectSummonCreature05")  }
  };
 /*===========================================================================
  *		End of Magic Effect Array

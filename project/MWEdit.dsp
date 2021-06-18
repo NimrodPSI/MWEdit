@@ -965,26 +965,6 @@ SOURCE=.\EsmOptions.cpp
 SOURCE=.\EsmUtils.cpp
 # End Source File
 # End Group
-# Begin Group "Devil"
-
-# PROP Default_Filter ""
-# Begin Source File
-
-SOURCE=..\IL\DevIL.dll
-# End Source File
-# Begin Source File
-
-SOURCE="..\IL\ilu-l.dll"
-# End Source File
-# Begin Source File
-
-SOURCE=..\IL\ilu.dll
-# End Source File
-# Begin Source File
-
-SOURCE=..\IL\ILUT.dll
-# End Source File
-# End Group
 # Begin Source File
 
 SOURCE=.\MWEdit.cpp
