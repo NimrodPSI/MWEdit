@@ -49,9 +49,9 @@
   	long  SpellSchool;
 	float BaseCost;
 	long  Flags;
-	long  Red;
-	long  Blue;
+	long  Red;	
 	long  Green;
+	long  Blue;
 	float SpeedX;
 	float SizeX;
 	float SizeCap;
