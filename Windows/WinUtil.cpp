@@ -313,10 +313,10 @@ bool CreateShortcut (LPTSTR pPathObj, LPTSTR pWorkingPath, LPTSTR pArgs, LPTSTR 
       WORD TempBuffer[MAX_PATH+1]; 
  
 		/*  Ensure that the string is ANSI */
-      MultiByteToWideChar(CP_ACP, 0, (LPCSTR) pPathLink, -1, TempBuffer, MAX_PATH); 
+      MultiByteToWideChar(CP_ACP, 0, (LPCSTR)pPathLink, -1, (LPWSTR)TempBuffer, MAX_PATH); 
  
 		/* Save the link by calling IPersistFile::Save */
-      hResult = pPersistFile->Save(TempBuffer, TRUE); 
+      hResult = pPersistFile->Save((LPCOLESTR)TempBuffer, TRUE); 
       pPersistFile->Release(); 
      } 
 

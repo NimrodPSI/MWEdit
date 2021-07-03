@@ -2,5 +2,7 @@
 *.ncb
 *.plg
 *.aps
+*.suo
+*.user
 Debug/
 Release/

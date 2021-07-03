@@ -18,6 +18,7 @@
  *=========================================================================*/
   #include "dl_err.h"
   #include "dl_str.h"
+  #include <ctype.h>
 /*===========================================================================
  *		End of Required Includes
  *=========================================================================*/
@@ -211,7 +212,7 @@ void TGenMap<TKey, TValue, TKeyArg>::Delete (TKeyArg Key) {
  *
  *=========================================================================*/
 template<class TKey, class TValue, class TKeyArg>
-TGenMap<TKey, TValue, TKeyArg>::CGenMapAssoc* TGenMap<TKey, TValue, TKeyArg>::GetAssocNode (TKeyArg Key, dword& Hash) {
+typename TGenMap<TKey, TValue, TKeyArg>::CGenMapAssoc* TGenMap<TKey, TValue, TKeyArg>::GetAssocNode (TKeyArg Key, dword& Hash) {
   CGenMapAssoc* pAssoc;
 
 	/* Ignore if no table defined */
@@ -414,7 +415,7 @@ bool TGenMap<TKey, TValue, TKeyArg>::Lookup (TKeyArg Key, TValue& Record) {
  *
  *=========================================================================*/
 template<class TKey, class TValue, class TKeyArg>
-TGenMap<TKey, TValue, TKeyArg>::CGenMapAssoc* TGenMap<TKey, TValue, TKeyArg>::NewAssocNode (void) {
+typename TGenMap<TKey, TValue, TKeyArg>::CGenMapAssoc* TGenMap<TKey, TValue, TKeyArg>::NewAssocNode (void) {
   DEFINE_FUNCTION("TGenMap::NewAssocNode()");
   TGenMap::CGenMapAssoc* pAssoc;
 
